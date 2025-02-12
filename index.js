@@ -57,7 +57,17 @@ let isMuted = false; // Initialize mute state
  * This function toggles the mute state.
  */
 function toggleMute() {
-    isMuted = !isMuted;
+    isMuted = !isMuted; // Toggle mute state
+
+    let button = document.getElementById("muteButton");
+
+    if (isMuted) {
+        button.classList.add("muted");  // Apply red color
+        button.textContent = "Unmute";  // Change button text
+    } else {
+        button.classList.remove("muted");  // Remove red color
+        button.textContent = "Mute";  // Change button text back
+    }
 }
 
 

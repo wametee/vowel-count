@@ -77,6 +77,19 @@ textarea {
     }
 }
 
+.mute {
+    background-color: green; /* Default color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.muted {
+    background-color: red; /* Change to red when muted */
+}
+
+
 /* Styling for the button */
 button {
     padding: 15px 30px;
